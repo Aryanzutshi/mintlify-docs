@@ -9,8 +9,8 @@
   },
   "favicon": "/favicon.svg",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/gemini-favicon.png",
+    "dark": "/images/gemini-favicon.png"
   },
   "navigation": {
     "tabs": [
@@ -44,8 +44,7 @@
             "group": "Infrastructure",
             "pages": [
               "architecture/twilio-sip",
-              "architecture/did-routing",
-              "architecture/message-hopping"
+              "architecture/did-routing"
             ]
           }
         ]
@@ -66,27 +65,6 @@
               "guides/zk-verification",
               "guides/privacy-model",
               "guides/threat-model"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Basics",
-            "pages": [
-              "api/introduction",
-              "api/authentication"
-            ]
-          },
-          {
-            "group": "Endpoints",
-            "pages": [
-              "api/calls/create",
-              "api/calls/status",
-              "api/calls/end",
-              "api/webhooks/events"
             ]
           }
         ]

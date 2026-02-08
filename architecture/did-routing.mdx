@@ -1,0 +1,178 @@
+---
+title: Direct Inward Dialing (DID)
+description: Understand Direct Inward Dialing (DID), how it works, its history, VoIP relevance, and modern use cases.
+---
+
+## What is Direct Inward Dialing (DID)?
+
+**Direct Inward Dialing (DID)**—also known as **Direct Dial-In (DDI)** in Europe and Oceania—is a telecommunication service that allows external callers to directly reach internal extensions within an organization’s **Private Branch Exchange (PBX)** system without going through an operator or auto-attendant.
+
+In simple terms:  
+**one organization, many phone numbers, fewer physical lines.**
+
+---
+
+## How DID Works
+
+With DID, a telephone service provider assigns a **range of phone numbers** to an organization and connects them to the organization’s PBX using a limited number of trunk lines.
+
+When a caller dials a DID number:
+
+1. The call is delivered to the PBX over a shared trunk.
+2. The dialed number is passed to the PBX using **Dialed Number Identification Service (DNIS)**.
+3. The PBX routes the call directly to the correct extension, queue, or service.
+
+This eliminates the need for manual call routing and scales efficiently.
+
+---
+
+## DID vs Plain Old Telephone Service (POTS)
+
+| Feature | POTS | DID |
+|------|------|-----|
+| One number per line | ✅ | ❌ |
+| Operator required | Often | No |
+| Scales efficiently | ❌ | ✅ |
+| PBX integration | Limited | Native |
+
+DID enables **many directory numbers** to be serviced using **far fewer physical circuits** than traditional analog phone setups.
+
+---
+
+## Trunking and Signaling
+
+### Historical Implementation
+- Originally delivered over **analog DID trunks**
+- Signaling battery was supplied by **customer premises equipment**
+- Reverse of standard POTS signaling logic
+
+### Modern Implementation
+- Predominantly delivered via:
+  - **PRI (Primary Rate Interface)**
+  - **SIP Trunking (VoIP)**
+
+Modern SIP-based DID is far more flexible, scalable, and globally available.
+
+---
+
+## Inbound vs Outbound Calling
+
+- **DID trunks** are traditionally **inbound-only**
+- Often paired with **Direct Outward Dialing (DOD)**
+
+With DOD:
+- Internal extensions can place outbound calls directly
+- Outbound Caller ID (CLI) can map to:
+  - Individual DID numbers
+  - A centralized organization number
+
+---
+
+## DID in VoIP and SIP Networks
+
+DID is foundational in **VoIP** systems.
+
+To allow PSTN users to call VoIP users:
+- DID numbers are assigned to a **VoIP gateway**
+- The gateway translates and routes calls between:
+  - PSTN ↔ SIP / IP networks
+
+This enables:
+- Cloud PBX
+- UCaaS platforms
+- Contact center routing
+- Global number portability
+
+---
+
+## DID for Fax Services
+
+DID is widely used in **fax server architectures**:
+
+- Multiple fax numbers
+- Shared fax modems
+- PBX or fax server routes by DID digits
+
+### Why Centralized Fax Servers Still Matter
+
+Even though standards like **T.38** exist:
+- Upstream VoIP routing often breaks reliability
+- Least-cost routing gateways may not support fax properly
+
+Centralized fax servers connected directly to PSTN via **T/E-carrier PRI lines**:
+- Ensure reliable fax delivery
+- Convert faxes to **PDF/TIFF**
+- Deliver via email or web portals
+
+Fax traffic never touches unreliable VoIP paths.
+
+---
+
+## Vendors and Number Procurement
+
+DID numbers can be sourced from:
+- Competitive Local Exchange Carriers (**CLECs**)
+- Interexchange carriers (for toll-free)
+- SIP trunking providers
+- International DID aggregators
+
+### Pricing Model
+- Monthly fee per number (often ~$1/month)
+- Usage-based billing:
+  - Per-minute
+  - Per concurrent channel
+
+Some regions (e.g., UK geographic numbers) may offer free DIDs when terminated over SIP.
+
+---
+
+## Global and International DID
+
+- International DIDs can be purchased in bulk
+- Numbers can appear local to the caller
+- Calls terminate anywhere via SIP
+
+This enables:
+- Global presence
+- Local customer experience
+- Centralized infrastructure
+
+---
+
+## Direct Outward Dialing (DOD)
+
+**Direct Outward Dialing (DOD)** is the outbound counterpart to DID.
+
+Key features:
+- Users place outbound calls without operator assistance
+- Caller ID can reflect:
+  - User’s DID
+  - Central switchboard number
+
+DOD + DID together form the backbone of modern enterprise telephony.
+
+---
+
+## Why DID Still Matters
+
+Even in cloud-native architectures, DID remains critical for:
+
+- PSTN interoperability  
+- Scalable inbound routing  
+- VoIP accessibility  
+- Fax reliability  
+- Global reach  
+
+DID isn’t legacy—it’s infrastructure.
+
+---
+
+## Summary
+
+Direct Inward Dialing enables enterprises to:
+- Scale communication efficiently
+- Eliminate manual call handling
+- Integrate seamlessly with VoIP and cloud PBX systems
+- Maintain reliable inbound voice and fax services
+
+If your system touches the PSTN, **DID is unavoidable—and indispensable**.

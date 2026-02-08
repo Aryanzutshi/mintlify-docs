@@ -1,0 +1,126 @@
+---
+title: Bring Your Own Carrier (BYOC) with SIP Trunking
+description: Understand how BYOC works, why enterprises adopt it, and how SIP trunking unlocks flexibility, control, and global scale.
+---
+
+## Overview
+
+As enterprises move from on-premise telephony to cloud-based communications, **SIP trunking** has become the backbone of modern voice infrastructure. While many UCaaS and CCaaS providers bundle PSTN connectivity by default, an increasing number of organizations are choosing **Bring Your Own Carrier (BYOC)** to regain control, reduce costs, and scale globally.
+
+BYOC allows businesses to connect their cloud communication platforms directly to a preferred SIP trunking provider, decoupling application logic from telephony transport.
+
+---
+
+## What Is BYOC?
+
+Bring Your Own Carrier (BYOC) is an **open SIP interface** offered by cloud communication platforms that enables enterprises to use a third-party PSTN provider instead of bundled calling.
+
+With BYOC:
+- The cloud platform handles **applications and features**
+- The SIP provider handles **PSTN access and routing**
+- SIP (Session Initiation Protocol) acts as the standard interface between them
+
+Each concurrent call is routed over a SIP trunk, enabling flexible and programmable voice connectivity.
+
+---
+
+## Bundled PSTN vs BYOC
+
+### Bundled PSTN Connectivity
+- One vendor for application + telephony
+- Simple setup and billing
+- Limited control over routing
+- Higher per-minute costs
+- Restricted geographic coverage
+
+### BYOC with SIP Trunking
+- Separate best-in-class providers
+- Independent number and routing control
+- Global DID and toll-free availability
+- Easier migration and provider switching
+- Consistent call quality across regions
+
+BYOC trades initial simplicity for long-term flexibility and operational control.
+
+---
+
+## Why Enterprises Choose BYOC
+
+### Global Coverage
+Specialist SIP providers typically offer phone numbers and PSTN access across **significantly more countries** than bundled UC platforms.
+
+### Cost Efficiency
+BYOC enables:
+- Consolidated traffic pricing
+- Negotiated enterprise rates
+- Avoidance of bundled call markups
+
+### Routing & Control
+SIP trunking introduces an abstraction layer between PSTN and applications, allowing:
+- Custom routing policies
+- Failover and redundancy
+- Dynamic reassignment of numbers
+- Controlled migration between platforms
+
+### Call Quality & Reliability
+Dedicated SIP providers optimize routing across multiple carriers and geographies, often backed by SLAs and real-time traffic optimization.
+
+---
+
+## Architecture Overview
+
+In a BYOC setup:
+
+- Phone numbers are managed by the SIP provider
+- Calls are routed over SIP trunks
+- Cloud platforms map numbers to users, agents, or queues
+- Optional enterprise SBCs enforce security and policy
+
+This architecture separates **telephony transport** from **application intelligence**.
+
+---
+
+## When BYOC Makes Sense
+
+BYOC is especially well-suited for:
+- Multinational enterprises
+- High-volume contact centers
+- Hybrid cloud + on-prem deployments
+- Organizations planning future vendor portability
+- Teams requiring fine-grained call routing control
+
+Smaller teams with limited geographic needs may prefer bundled PSTN for convenience.
+
+---
+
+## Tradeoffs to Consider
+
+While powerful, BYOC introduces:
+- An additional vendor relationship
+- Potential SBC deployment and management
+- Slightly higher initial setup complexity
+
+For most large or growing organizations, these costs are offset by long-term savings and flexibility.
+
+---
+
+## Summary
+
+BYOC transforms SIP trunking from a backend utility into a **strategic control layer**.
+
+By separating PSTN connectivity from cloud communication platforms, enterprises gain:
+- Lower costs
+- Global reach
+- Better call quality
+- Architectural independence
+
+In modern voice systems, **two providers are often better than one**.
+
+---
+
+## See Also
+
+- SIP Trunking Fundamentals  
+- PSTN Architecture  
+- Enterprise Voice Routing  
+- UCaaS and CCaaS Integration  

@@ -1,0 +1,26 @@
+---
+title: Voice over Internet Protocol (VoIP)
+description: An overview of VoIP technology and its role in modern communication systems
+---
+
+Voice over Internet Protocol (VoIP) is a communication technology that enables voice calls to be transmitted over IP-based networks rather than traditional circuit-switched telephone systems. Instead of relying on dedicated physical lines, VoIP converts voice signals into digital data packets and delivers them across the Internet or private IP networks.
+
+VoIP operates using a packet-switched model, where voice data is encoded, segmented, and transmitted in real time using low-latency transport protocols. On the receiving end, packets are reassembled and decoded back into natural speech. This software-driven approach allows voice communication to share infrastructure with data traffic, significantly increasing efficiency and flexibility.
+
+Modern VoIP systems support a wide range of devices, including IP phones, mobile devices, web applications, and legacy telephones through analog telephone adapters (ATAs). VoIP is also natively embedded in mobile networks via technologies such as Voice over LTE (VoLTE) and Voice over 5G (Vo5G), making it a core component of contemporary telecommunications infrastructure.
+
+By abstracting voice communication into software, VoIP enables rapid deployment, global scalability, and advanced features such as call routing, conferencing, analytics, and integration with digital services. This shift has positioned VoIP as the foundation for unified communications and voice-first applications in the modern Internet era.
+
+
+## How VoIP Works
+
+```mermaid
+flowchart LR
+    A[User Device<br/>(Phone / Softphone)] -->|Voice Input| B[VoIP Client]
+    B -->|Digitization & Encoding| C[Audio Codec<br/>(Opus / G.711 / AAC)]
+    C -->|Packetization| D[IP Packets]
+    D -->|Internet / IP Network| E[IP Network]
+    E -->|Routed Packets| F[VoIP Server / SIP Server]
+    F -->|Session Control & Signaling| G[Receiving VoIP Client]
+    G -->|Decoding & Playback| H[Receiver Device<br/>(Phone / App)]
+```
